@@ -17,7 +17,7 @@ dxs = [0,1]
 dys = [1,0]
 
 def dfs(x, y):
-    visited[x][y] = True
+    visited[x][y] = True # dfs는 진입하고 적어주면 깔끔
 
     for dx, dy in zip(dxs, dys):# 0,1 /  1,0
         nx, ny = x + dx, y + dy
