@@ -19,14 +19,22 @@ dys = [1,0]
 def dfs(x, y):
     visited[x][y] = True
 
-    for dx, dy in zip(dxs, dys):
+    for dx, dy in zip(dxs, dys):# 0,1 /  1,0
         nx, ny = x + dx, y + dy
         if 0 <= nx < N and 0 <= ny < M and not visited[nx][ny] and A[nx][ny] == 1:
             dfs(nx, ny)
 
 dfs(0, 0)
+#python 3항 연산자
+# value1 if <statement> else value2
+# if <statment>:
+#       res = value1
+#else:
+#       res = value2
 
 if visited[-1][-1]:
     print(1)
 else:
     print(0)
+
+print(1 if visited[-1][-1]else 0)
