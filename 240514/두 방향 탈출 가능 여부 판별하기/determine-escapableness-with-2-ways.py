@@ -32,9 +32,9 @@ dfs(0, 0)
 #else:
 #       res = value2
 
-if visited[-1][-1]:
-    print(1)
-else:
-    print(0)
+# if visited[-1][-1]:
+#     print(1)
+# else:
+#     print(0)
 
 print(1 if visited[-1][-1]else 0)
