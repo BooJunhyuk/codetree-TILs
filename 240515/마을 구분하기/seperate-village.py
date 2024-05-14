@@ -37,7 +37,7 @@ for i in range(N):
 print(t)
 #print(sorted(people_arr))
 people_arr.sort()
-for i in range(len(people_arr)):
+for i in range(t):
     print(people_arr[i])
 # for elem in people_arr:
 #     print(*elem)
