@@ -9,8 +9,8 @@ visited = [
     [False for _ in range(N)]
     for _ in range(N)
 ] # 방문한 적이 있는지 체크
-dxs = [0,1]
-dys = [1,0]
+dxs = [0,1,0,-1]
+dys = [1,0,-1,0]
 
 people = 0 # 사람 수
 t = 0 # 마을 수
