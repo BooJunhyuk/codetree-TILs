@@ -38,4 +38,4 @@ for i in range(N):
             #그리고 블록사이즈 저장
             block_size_arr.append(block_size)
 
-print(block_size_bomb, max(block_size_arr)) #블록 사이즈 최대 크기
+print(block_size_bomb, max(block_size_arr)) # 터지는 개수랑 블록 사이즈 최대 크기
