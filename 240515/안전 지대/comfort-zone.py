@@ -24,7 +24,7 @@ for i in graph:
     for m in i:
         K = max(K,m)
 
-for k in range(1, K):
+for k in range(1, K+1):
     safe_area_cnt = 0
     visited = [
         [False for _ in range(M)]
