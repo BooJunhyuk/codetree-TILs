@@ -1,3 +1,5 @@
+import sys
+sys.setrecursionlimit(2500)
 N, M = map(int,input().split())
 
 graph = [
