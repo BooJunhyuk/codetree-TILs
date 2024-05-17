@@ -1,3 +1,20 @@
+#Choose(int curr_num)
+#  - 첫 번째부터 curr_num - 1번째 까지는 모두 선택이 완료되었다.
+#  - curr_num번째 위치에 0 혹은 1을 선택하는 함수
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 K,N = map(int,input().split())
 
 ans = []
