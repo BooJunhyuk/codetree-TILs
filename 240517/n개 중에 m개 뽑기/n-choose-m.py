@@ -18,22 +18,27 @@ def choose(curr_num,one_cnt):
     #종료 조건
     if curr_num == N + 1:
         if one_cnt == M:
-            #print(*ans)
-            for i in range(N):
-                if ans[i] == 1:
-                    print(i+1, end=" ")
-            print()
+            print(*ans)
+            # for i in range(N):
+            #     if ans[i] == 1:
+            #         print(i+1, end=" ")
+            # print()
         return
 
     
     #호출
-    ans.append(1)
+    # ans.append(1)
+    # choose(curr_num+1, one_cnt+1)
+    # ans.pop()
+
+    # ans.append(0)
+    # choose(curr_num+1, one_cnt)
+    # ans.pop()
+    ans.append(curr_num)
     choose(curr_num+1, one_cnt+1)
     ans.pop()
-    
-    ans.append(0)
+
     choose(curr_num+1, one_cnt)
-    ans.pop()
 
     
 
