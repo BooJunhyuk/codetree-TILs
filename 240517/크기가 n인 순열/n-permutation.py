@@ -13,11 +13,22 @@ def choose(curr_num):
         return
 
     
+    # for i in range(1,n+1):
+    #     if visited[i]:
+    #         continue
+
+    #     ans.append(i)
+    #     visited[i] = True
+
+    #     choose(curr_num + 1)
+            
+    #     ans.pop()
+    #     visited[i] = False
 
     for i in range(1,n+1):
         if not visited[i]:
             ans.append(i)
-            visited[curr_num] = True
+            visited[i] = True
 
             choose(curr_num + 1)
             
