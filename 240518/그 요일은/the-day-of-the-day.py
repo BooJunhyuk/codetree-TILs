@@ -1,4 +1,4 @@
-A = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+A = ['Sun','Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ]
 
 m1, d1, m2, d2 = map(int,input().split())
 
@@ -17,7 +17,7 @@ for i in range(m1,m2):
 day_sum += d2
 
 cnt = day_sum // 7
-cnt1 = day_sum%7
+cnt1 = day_sum%7 + 1
 
 if A[cnt1] == day:
     cnt+=1
