@@ -18,11 +18,8 @@ for i in range(m1,m2):
         day_sum +=days[i]
 
 day_sum += d2
-
-cnt = day_sum // 7
-cnt1 = day_sum%7
-
-if A[cnt1] == day:
-    cnt+=1
-
+cnt = 0
+for i in range(day_sum +1):
+    if A[(1+i)%7] == day:
+        cnt += 1
 print(cnt)
