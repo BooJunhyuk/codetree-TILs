@@ -6,9 +6,9 @@
 
 OFFSET = 1000
 
-w = [0]*2002
-b = [0]*2002
-a = [0]*2002
+w = [0]*10000
+b = [0]*10000
+a = [0]*10000
 
 n = int(input())
 
@@ -17,7 +17,6 @@ start = OFFSET
 for i in range(n):
     x, d = input().split()
     x = int(x)
-    end = x + OFFSET
 
     if d == 'R':
         while x >0:
