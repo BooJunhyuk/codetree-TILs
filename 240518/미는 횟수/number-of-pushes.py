@@ -9,3 +9,5 @@ for i in range(len(a)):
     if a == b:
         print(cnt)
         break
+    if cnt == len(a):
+        print(-1)
