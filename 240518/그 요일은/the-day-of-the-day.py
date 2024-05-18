@@ -12,7 +12,10 @@ day = input()
 # 일수 계산
 day_sum = 0
 for i in range(m1,m2):
-    day_sum += (days[m1] - d1 +1)
+    if i == m1:
+        day_sum += (days[m1] - d1 +1)
+    else:
+        day_sum +=days[i]
 
 day_sum += d2
 
