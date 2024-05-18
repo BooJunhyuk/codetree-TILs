@@ -9,6 +9,7 @@ while B in A:
         if A[i:i+B_L] == B:
             A = A[:i] + A[i+B_L:]
             A_L = len(A)
+            break
     
 print(A)
 
