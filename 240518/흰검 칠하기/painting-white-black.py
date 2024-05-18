@@ -4,7 +4,7 @@
 
 
 
-OFFSET = 1000
+OFFSET = 2000
 
 w = [0]*10000
 b = [0]*10000
@@ -39,7 +39,7 @@ for i in range(n):
 gray = 0
 white = 0
 black = 0
-for i in range(2002):
+for i in range(10000):
     if w[i] >= 2 and b[i] >= 2:
         gray += 1
     elif  a[i] == 1:
