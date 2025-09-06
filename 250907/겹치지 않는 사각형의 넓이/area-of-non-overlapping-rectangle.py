@@ -18,6 +18,20 @@ checked = [
     for _ in range(MAX_R + 1)
 ]
 
-for i in range(3):
+for i in range(3): # i = 0, 1, 2
     xa = x1[i] + OFFSET
-    xa = x1[i] + OFFSET
+    ya = y1[i] + OFFSET
+    xb = x2[i] + OFFSET
+    yb = y2[i] + OFFSET
+
+    color = i + 1 # color 1, 2, 3
+    for x in range(xa,xb):
+        for y in range(ya, yb):
+            checked[x][y] = color
+
+area = 0
+for x in range(MAX_R+1):
+    for y in range(MAX_R+1):
+        if checked[x][y] == 1 or checked[x][y] == 2:
+            area += 1
+print(area)
